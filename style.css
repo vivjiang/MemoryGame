@@ -1,0 +1,86 @@
+body > * {
+	/*width: 500px;*/
+	margin: 0 auto;
+}
+
+.top-header {
+	width: 800;
+}
+
+.top-header > * {
+	margin: 0 auto;
+}
+
+#difficulty-picker {
+	margin: 30px auto;
+	text-align: center;
+	width: 500
+}
+
+#difficulty-picker > * {
+    margin: 0 20;
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 7px 15px;
+    /*margin: 20 20;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+#color-picker {
+	margin: 30px auto;
+	text-align: center;
+	width: 500
+}
+
+#color-picker > * {
+    margin: 0 20;
+}
+
+.easyBtn {
+	background-color: #70c170;
+}
+
+.mediumBtn {
+	background-color: #f7bc37;
+}
+
+.hardBtn {
+	background-color: #ff6060;
+}
+
+#resetBtn {
+	margin: 30px auto;
+	display: none;
+}
+
+.canvas-container {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.memgame {
+	margin: 0 auto;
+}
+
+@-webkit-keyframes wiggle {
+	0% {
+		-webkit-transform:rotate(4deg);
+	}
+	50% {
+		-webkit-transform:rotate(-4deg);
+	}
+	100% {
+		-webkit-transform:rotate(4deg);
+	}
+}
+
+.wiggle:hover {
+	-webkit-animation: wiggle 0.5s infinite;
+}

@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <script src="setup_game.js"></script>
+    <script src="playgame.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class="top-header">
+
+      <img src="memory_logo.png" style="width: 800;height: auto">
+
+      <div id="color-picker">
+        <!-- <h2> First choose single color or two color tiles: </h2> -->
+        <!-- <button onclick = "setupTaskOneColor();this.disabled=true;document.getElementById('two color').disabled=true;
+        document.getElementById('easy').disabled=false;
+        document.getElementById('medium').disabled=false;document.getElementById('hard').disabled=false;"
+         id = "one color"> One color </button>
+
+        <button onclick = "setupTaskTwoColor();this.disabled=true;document.getElementById('one color').disabled=true;
+        document.getElementById('easy').disabled=false;
+        document.getElementById('medium').disabled=false;document.getElementById('hard').disabled=false;"
+         id = "two color"> Two Colors </button> -->
+        <button onclick = "setupTaskOneColor();toggleBtnGroup()" id = "one color"> One color </button>
+        <button onclick = "setupTaskTwoColor();toggleBtnGroup()" id = "two color"> Two Colors </button>
+
+      </div>
+
+      <div id="difficulty-picker">
+          <button class="easyBtn wiggle" onclick="toggleBtnGroup()" id="easy"> Easy</button>
+
+          <button class="mediumBtn wiggle" onclick="toggleBtnGroup()" id="medium"> Medium</button>
+
+          <button class="hardBtn wiggle" onclick="toggleBtnGroup()" id="hard"> Hard</button>
+      </div>
+
+      <button onclick = "location.reload();toggleBtnGroup()" id="resetBtn"> Reset</button>
+
+    </div>
+
+    <!-- <div class = "canvas-container">
+      <canvas id = "memgame" width = "470" height="461"></canvas>
+    </div> -->
+    <canvas id = "memgame" width = "470" height="461"></canvas>
+
+  <script>
+    //setupTask("memgame");
+    function setupTaskOneColor(){
+      setupOneColor("memgame");
+    }
+
+    function setupTaskTwoColor(){
+      setupTwoColor("memgame");
+    }
+  </script>
+  </body>
+</html>
